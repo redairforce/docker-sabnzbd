@@ -29,6 +29,8 @@ RUN \
   apk add  -U --update --no-cache \
     7zip \
     python3 && \
+  echo "**** install deflacue ****" && \
+    pip3 install deflacue \
   echo "**** install sabnzbd ****" && \
   if [ -z ${SABNZBD_VERSION+x} ]; then \
     SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases/latest \
