@@ -23,6 +23,8 @@ RUN \
     build-base \
     libffi-dev \
     openssl-dev \
+    cuetools \
+    flac \
     python3-dev && \
   apk add  -U --update --no-cache \
     7zip \
